@@ -1,28 +1,38 @@
 # ENTRE
 
-Um temporizador de contrações simples, rápido e local. Não exige conta, não envia dados para um servidor e salva o histórico somente no dispositivo.
+A fast, local-first contraction timer. No account, server, or data collection—history is saved only on the device.
 
-## Desenvolvimento
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Produção
+## Production build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Funcionalidades
+## Features
 
-- Registro de contrações com um botão grande de iniciar/parar
-- Frequência (início a início) e duração lado a lado
-- Histórico editável e exclusão com desfazer
-- Gráfico de frequência e análise do padrão
-- Português e inglês
-- Persistência local com `localStorage`
+- One large start/stop button
+- Frequency (start to start) and duration displayed together
+- Editable history, deletion, and persistent undo
+- Frequency chart and simple pattern analysis
+- Portuguese and English interface
+- Local persistence via `localStorage`
 
-> Este aplicativo é uma ferramenta de registro e não substitui as orientações da equipe obstétrica.
+## Deploy on Vercel
+
+The repository is already configured for Vercel. Import the GitHub repository at [vercel.com/new](https://vercel.com/new), leave the detected Vite settings in place, and select **Deploy**. No environment variables are required.
+
+Alternatively, use the CLI:
+
+```bash
+npx vercel
+```
+
+> This app is a record-keeping tool and does not replace guidance from an obstetric care team.
